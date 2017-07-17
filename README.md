@@ -17,5 +17,5 @@ DELETE /todo/1 - Deletes TODO list with ID 1;
 DELETE /task/1 - Deletes Task with ID 1;
 PUT /todo/1 - Updates TODO List with ID 1;
 PUT /task/1 - Updates Task with ID 1;
-PATCH /task/1 - Sets to Completed the Status of the Task with ID 1;
+PATCH /task/1 - Sets to Completed the Status of the Task with ID 1;  
 
