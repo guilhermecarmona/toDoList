@@ -1,6 +1,10 @@
-"# toDoList" 
+toDoList
 
-Requests: 
+- Server starts on localhost:8888
+- Two tables are used : todos - contains the TODO Lists
+                        tasks - contains the tasks that are assigned to a todo list
+
+Requests:
 
 GET /todos - Reads all TODO lists;
 GET /todo/1 - Reads a TODO list with ID 1 and its associated tasks;
