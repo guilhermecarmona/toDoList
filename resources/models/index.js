@@ -1,14 +1,15 @@
 'use strict';
 
-const fs        = require('fs');
-const path      = require('path');
+const config = require('../config'); //database details
+const fs = require('fs');
+const path = require('path');
 const Sequelize = require('sequelize');
-const basename  = path.basename(module.filename);
-const db        = {};
+const basename = path.basename(module.filename);
+const db = {};
 
 //Connecting to the DB
-const sequelize = new Sequelize('TODO', 'root', 'root', {
-    host: 'localhost',
+const sequelize = new Sequelize(config.db_name,config.db_user, config.db_pass, {
+    host: config.host,
     dialect: 'mysql'
 });
 
