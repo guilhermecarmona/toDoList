@@ -9,7 +9,7 @@ const db = {};
 
 //Connecting to the DB
 const sequelize = new Sequelize(config.db_name,config.db_user, config.db_pass, {
-    host: config.host,
+    host: config.db_host,
     dialect: 'mysql'
 });
 
