@@ -137,26 +137,6 @@ exports.createTask = (request,reply) =>
         });
 };
 
-exports.updateTaskStatus = (request,reply) =>
-{
-    var updateTaskStatus = {
-        status: 'completed'
-    };
-    task.update(
-        updateTaskStatus,
-        { where: { id: request.params.id}}
-    )
-        .then(function(tasks) {
-            var res = { rows: tasks[0] }
-            reply(JSON.stringify(res)).type('application/json');
-        })
-        .catch(function(err) {
-            reply(err);
-            console.log(err);
-        });
-};
-
-
 exports.updateTask = (request,reply) =>
 {
     task.update(request.payload,

@@ -97,13 +97,6 @@ module.exports = function Routes(server) {
         }
     });
 
-    //Set Task status to completed (Update a Task)
-    server.route({
-        method: 'PATCH',
-        path: '/task/{id}/completed',
-        handler: handlers.updateTaskStatus
-    });
-
     //Update a Task
     server.route({
         method: 'PUT',
